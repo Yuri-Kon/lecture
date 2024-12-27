@@ -1,0 +1,315 @@
+<!DOCTYPE html><html><head>
+      <title>lecture</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\86158\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.15\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+body {
+    background: linear-gradient(to right, #ffffff 0%, #fcfcfc 100%);
+}
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #5f89a9;
+    padding-top: 20px;
+    overflow-x: hidden;
+}
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+}
+.sidebar a:hover {
+    background-color: #575757;
+}
+.sidebar .sub-link {
+    padding-left: 30px;
+    font-size: 16px;
+}
+.content {
+    margin-left: 260px;
+    padding: 20px;
+}
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    <div class="sidebar">
+        <a href="#表达与真实">表达与真实</a>
+        <a href="#为什么会表达写作" >为什么会表达/写作</a>
+        <a href="#我的写作起始" class="sub-link">我的写作起始</a>
+        <a href="#将写作视为文学" class="sub-link">将写作视为文学</a>
+        <a href="#为什么重要的话总是说不出口">重要的话总是说不出口</a>
+        <a href="#为什么会放弃表达" class="sub-link">为什么会放弃表达</a>
+        <a href="#再次表达" class="sub-link">再次表达</a>
+        <a href="#如何表达">如何表达</a>
+        <a href="#表达的态度" class="sub-link">表达的态度</a>
+        <a href="#陈词滥调" class="sub-link">陈词滥调</a>
+        <a href="#真实指引一切创作">真实指引一切创作</a>
+    </div>
+    <div class="content">
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="表达与真实">表达与真实 </h1>
+<ul>
+<li>为什么会表达/写作</li>
+<li>为什么重要的话总是说不出口</li>
+<li>如何表达</li>
+<li>真实指引所有创作行为</li>
+</ul>
+
+<div class="md-toc">
+<details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#表达与真实" class="md-toc-link"><p>表达与真实</p>
+</a>
+          </summary>
+        <div>
+          <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#为什么会表达写作" class="md-toc-link"><p>为什么会表达/写作</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#我的写作起始" class="md-toc-link">
+            <p>我的写作起始</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#将写作视为文学" class="md-toc-link">
+            <p>将写作视为文学</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#为什么重要的话总是说不出口" class="md-toc-link"><p>为什么重要的话总是说不出口</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#为什么会放弃表达" class="md-toc-link">
+            <p>为什么会放弃表达</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#再次表达" class="md-toc-link">
+            <p>再次表达</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#如何表达" class="md-toc-link"><p>如何表达</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#表达的态度" class="md-toc-link">
+            <p>表达的态度</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#陈词滥调" class="md-toc-link">
+            <p>陈词滥调</p>
+
+          </a></div>
+        </div>
+      </details>
+    <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#真实指引一切创作" class="md-toc-link">
+            <p>真实指引一切创作</p>
+
+          </a></div>
+        </div>
+      </details>
+    
+</div>
+<h2 id="为什么会表达写作">为什么会表达/写作 </h2>
+<h3 id="我的写作起始">我的写作起始 </h3>
+<p>最初应该在小学。当时老师会布置作文，我妈妈给我买了很多小学作文大全，我经常会抄一些作文以应付。这是我最初的“文学”启蒙。滑稽的是，我在这种谎言中收到了鼓励——班主任，一位很严厉的语文老师，经常在我们班级上阅读我的作文。令人庆幸的是，我们班级同学并没有识破我那假冒的作文。于是很讽刺的，我写作最初的动力来自于小小的谎言。<br>
+&nbsp;<br>
+真到了我开始有意识写作时已经是初中了。月考，我没有能力背作文，于是就尽我所能地把脑子里的作文串起来。比如：</p>
+<blockquote>
+<p>一名初一的学生在家长会后，冒着暴雨顶一张压扁的纸箱狂奔回家。经过某家紧闭的店门口时，他在生锈的空调外机和卷帘门的缝隙里发现了一只小猫，于是把那张纸箱——一面已经湿透了——搭在小猫的头顶。</p>
+</blockquote>
+<p>这一段里我杂揉了多个作文：家长会后心情郁闷少年想要发泄、冒雨回家的人以纸板充当雨伞、以及司空见惯的好心人救助小猫。几乎整个初中，我在考场上都在重复同样的事——把脑海里为数不多的故事重新编排组织。<br>
+&nbsp;<br>
+在这种组织下，我还真有几次意外的惊喜——我的作文又被老师发现了。也有几次上台读作文的经历。可以说，正是初中对记叙文的青睐，才使我组织故事的尝试得到了回报吧。接着不久，很自然的，我开始尝试考场作文外的写作。<br>
+&nbsp;<br>
+这里得插一句，也许有人会觉得考场作文受到重视，并不一定就会导致我在考场之外写作。需要补充一下我当时的状态吧：一句话——我自卑又渴求认同。初一的学生，自我意识开始觉醒，格外在意别人的看法。那时我对于自己的容貌并不自信，而且又想博得班级同学（男生女生）的认可，只能从别的方面、现实方面下手——于是我选择了<code>故事</code>，我可以完全隐藏在它身后。所以，我最初的被记录下来的写作，就在QQ空间里。<br>
+&nbsp;<br>
+展现一段：</p>
+<blockquote>
+<p><a href="text/01.html">2018-12-29</a></p>
+</blockquote>
+<p>以上，可以总结一下，我最初的创作动力，就是为了<strong>得到认可</strong>。</p>
+<div style="text-align: center;">
+  <img src="image/LookBack05.png" alt="alt text" width="60%">
+  <img src="image/LookBack06.png" alt="alt text" width="60%">
+</div>
+<h3 id="将写作视为文学">将写作视为文学 </h3>
+<p><a href="https://www.bilibili.com/video/BV1DE411P7eu?spm_id_from=333.788.recommend_more_video.-1&amp;vd_source=6087fc7ce7582288c890ba942e7d24c1">轮到你们说了</a></p>
+<p>我简略说一下，我在高中时才自觉地进行文学创作。当时我认真读的第一本书是太宰治的<code>《人间失格》</code>，当时也是跟风。随后就是对日本文学一发不可收拾的两年的阅读，直到我找到了川端康成，现在我都在看他的作品。<br>
+&nbsp;<br>
+高中时，我开始写日记了。说是日记，其实更多的是对于写作技巧的练习。自觉的写作。持续了三年。这段时间我所思考的一个问题就是，我究竟想要什么样的作品。<br>
+<a href="text/02.html">2021-06-12</a><br>
+<a href="text/03.html">2022-04-23</a></p>
+<blockquote>
+<p>2022-07-09<br>
+大概内心深处一直希望有一个读者吧。我自认为对于文字是比较拿手的，所以要不断创作。为我自己也好，为天下人也好，为唯一的读者也好，永不停歇地创作。写下我的想象，我的回忆，我生活的片段，生命的一部分。将这些生命存放着，准备在麻木时唤醒自己，在迷茫是启发自己；将这些生命交给他人，让别人感受着我眼中的世界。说到底，我写作就是为了唤起世界某处的某个灵魂的颤动，和它一起战栗，和他分享我的生命。</p>
+</blockquote>
+<p>简单来说，整个高中三年我的写作很大程度上是为了对抗单调乏味甚至反人性的高中生活的。其间我对于一些写作技巧的探索，可能只是为了让自己的写作显得“正式”，显得更加<code>文学</code>。这时我对于文学的理解还局限于高中语文课本里，对现实主义作家和诗人的阐释——反映社会、激起共鸣、兼济天下的事物。文学此时显得十分神圣、高大，而自认为能接近这一神圣事物的我也自然地产生了某种自豪感，也认为不得不精进自己的写作技术了。</p>
+<p>很浅显的认识。</p>
+<h2 id="为什么重要的话总是说不出口">为什么重要的话总是说不出口 </h2>
+<p>在谈论什么是文学时，我会先谈论为什么有段时间停止了写作，也即停止了表达。</p>
+<div style="text-align: center;">
+  <img src="image/LookBack03.png" alt="alt text" width="60%">
+  <img src="image/LookBack04.png" alt="alt text" width="60%">
+</div>
+<h3 id="为什么会放弃表达">为什么会放弃表达 </h3>
+<ul>
+<li>
+<p>担心表达的后果<br>
+<a href="video%5Cmatch_factory_girl_01.mp4">火柴厂女工01</a></p>
+</li>
+<li>
+<p>对于表达普遍无法达到效果的疲惫<br>
+<a href="video%5Cmatch_factory_girl_03.mp4">火柴厂女工03</a><br>
+契诃夫的《吻》：<br>
+一个又矮又丑的军官，前半生从来没得到过女人的爱和温情，在一次由一位退休将军组织的宴会中，阴差阳错地走进了一间陌生的房间，在一片黑暗中被一个女人搂住脖子亲了一口——“可算来了！”。之后当然，女人发现自己认错人，飞快地跑开了。这名军官自此之后，反复回味着这次小小的奇迹，一种突如其来的、荒唐的温情却令他感受到前所未有的悸动。每次军队里谈论起女人，他都尽量回避，觉得这样是侮辱那名陌生的女人，暗求她的原谅。直到某次，他决定谈论起这个奇迹：<br>
+&nbsp;</p>
+<blockquote>
+<p>他开始详详细细地述说那件亲吻的事，过一会就沉默了……一会儿的功夫他已经把前后情形都讲完了，这件事只要那么短短的功夫就讲完，他不由得大吃一惊。他本来以为会把这个亲吻的故事一直讲到第二天早晨呢。</p>
+</blockquote>
+<p>随即是其他军官的不相信和打趣<br>
+&nbsp;</p>
+<blockquote>
+<p>这惹得他讨厌。他离开那口箱子，上了床，赌咒再也不向别人谈起这件事。</p>
+</blockquote>
+<p>直到他再次经过曾举办宴会的那个别墅：<br>
+&nbsp;</p>
+<blockquote>
+<p>现在他什么也不期盼了，他这才清清楚楚地了解了那件亲吻的事、他的焦躁、他的模糊的希望和失望。他想到他没有看见将军的使者，想到他永远也不会见到那个原该亲吻别人却错吻了他的姑娘，不在觉得奇怪了。刚好相反，要是他见到了她，那倒奇怪了……</p>
+</blockquote>
+<p>这里，我理解为，他的沉默，是因为他视为奇迹的事情，原来不过如此，原来不是那么重要，随之产生了失望和疲惫。这种奇迹只不过是自己一厢情愿的，没人会在意。<br>
+&nbsp;<br>
+这里可以引申去谈我们如何才能适当地表达这种微妙的情感，但我选择继续话题，谈我为什么放弃了表达。<br>
+&nbsp;<br>
+我的经历和这名军官的差不多，甚至会更加不文学。简单来说，我一直以来坚持并反复在小说里尝试证明的理念——两个人之间可以建立起无关爱情、亲情、友情等的深刻情感——被我的亲身经历证明是不可行的。更具体一点来说，我一直寄予无条件信任的朋友，在某时突然和我绝交的时候，说道“其实我一直都是强迫自己与你的小说共情”。这时我感到一直以来的表达都建立在谎言之上，对于先前的表达和未来的表达都感到疲惫。我觉得自己说的话无关紧要。</p>
+</li>
+</ul>
+<p>这三个例子已经足够说明我们为什么会放弃表达了。或许危言耸听一点，面对现实时，无论给这个现实冠以什么形容词，都会感到无话可说。<br>
+&nbsp;<br>
+<strong>失语</strong><br>
+&nbsp;<br>
+很多小说中的母亲向子女抱怨生活时，在最后总会叹一口气，说出一句</p>
+<blockquote>
+<p>我不想待在这里了。我早就不想待在这里了。</p>
+</blockquote>
+<p>面对她们的琐事，这可能是唯一能说的话。</p>
+<h3 id="再次表达">再次表达 </h3>
+<p>我们将绝不可能表达出自己最真实的想法，将绝不可能进行心灵层面上的交流并获得共情。<br>
+&nbsp;<br>
+是这样吗？<br>
+&nbsp;<br>
+回想一下先前所举出的例子。这些作品确确实实地把平日里绝不可能说出口的事物表达了出来。无论通过什么形式。即便视频里几乎没有台词，它也能表达主人公的情感状态，并切实地令我们感受到。<br>
+&nbsp;<br>
+抛开口头叙说，相信我们已经找到了再次表达的方式——<strong>创作</strong><br>
+&nbsp;<br>
+于是我可以对为什么会表达/写作给出一个更加必要的条件——因为那些<strong>无法说出口的事物</strong>。<br>
+&nbsp;<br>
+面对瞬息间的情绪波动，无法用理论总结的情感状态，不会被任何人发现的永远不会说出口的事物，以及某些崇高的理念和信仰，我们能表达它们的方式，几乎只有创作。于是，不可言说性几乎成为了所有创作的起因，并不是我们在写作过程中遇到了这些不可言说而思考如何表达，而是在生活里由于无法表达这些事物而去创作。<br>
+&nbsp;<br>
+接下来的语境中，我所说的表达可以视为创作。<br>
+&nbsp;<br>
+至此，我们可以说，那些<strong>重要的话</strong>虽然无法说出口，但仍可被<strong>表达</strong>。</p>
+<h2 id="如何表达">如何表达 </h2>
+<h3 id="表达的态度">表达的态度 </h3>
+<div style="text-align: center;">
+  <img src="image/NegativeExample01.jpg" alt="alt text" width="45%">
+</div>
+<blockquote>
+<p><strong>邂逅</strong>:<br>
+人散了，冰场空了，余晖落了，音乐起了，思绪乱了。不知是感觉想再次升起，还是冬雪眷顾我，冰场的一瞥，竟是那般美好。虽然知道，那单单是一种感觉、一次偶然，但相逢便是缘，足以录入记忆。也许是太过痴迷、太自以为是、太自作多情，竟把“明明是初次相见，为何会有种熟悉的感觉?”幻想于现实里。不过，所谓青春，难免会有稚嫩与羞涩，这种感觉很妙，妙到弹指而过，时间也留不住。<br>
+那一瞥，真若惊鸿一瞥。<br>
+愿大家都能来一次邂逅，存入脑海那一瞥<br>
+——遇一位冰场姑娘</p>
+</blockquote>
+<p>我们为什么会笑：</p>
+<blockquote>
+<p>我们嘲笑他人，是因为认为他们的行为不符合预期——不协调、不恰当、太夸张或者太少，甚至完全多余。</p>
+</blockquote>
+<p>这里有一个假设：嘲笑者自认为是一个认知主体。即，我们觉得比作者懂得多。再即，我们认为他表达出的情感极度<strong>不真实</strong>，到了矫揉造作的地步。</p>
+<p>其实任何作品都会有这种风险：作者想表达的并不被读者相信。因为面对作品，读者完全有选择信或不信的权利。</p>
+<p>而这篇文本恰恰是让大部分人都不相信的。</p>
+<p>在进一步谈论他的组织方式为什么如此令人不相信，我将先谈论导致他这种行为的创作态度。</p>
+<div style="text-align: center;">
+  <img src="image/LookBack10.png" alt="alt text" width="100%">
+  <img src="image/LookBack11.png" alt="alt text" width="100%">
+</div>
+<p><strong>我想画得更好</strong>。这名作者会有这样的想法吗？<br>
+我们如何对待创作？<br>
+回到冰场姑娘的文本，这里作者的创作态度可以被总结为：<br>
+一位天才大学生天才般地发现了一个崇高的场景，并用天才的语言描绘出了自己此刻的感受</p>
+<ul>
+<li>文本中没有他的情感以外的事物</li>
+<li>创作仅仅服务于他的自我陶醉</li>
+<li>“文学性”是其获得认同的工具</li>
+</ul>
+<p>和高中时的我很像，他将创作当成了一个<strong>少部分人拥有的特殊才能</strong>，这种才能给了他少数派的<strong>优越感</strong>。</p>
+<p>优越感不是问题，我们都具有优越感。我在这里说这些，也包含优越感的推动。作者的问题，或是说导致其文本如此自我陶醉的问题，在于他仅仅止步于这种优越感。他绝不会思考如何才能写得更好，绝不会试图把创作当成某种传达不可言说之物的途径，而只是看着舞文弄墨的文字，觉得自己真是个天才。</p>
+<p>那么我们为什么想要“画得更好”？</p>
+<p>我们当然可以立即回答因为对艺术的向往，对真实表达的追求，对社会的反思和揭露等等。<br>
+但我们真的想要这样的回答吗？这些回答是我们所想的吗？</p>
+<p>这个问题的答案只能由你们自己决定。这个问题的答案将决定你们往后的创作，或者说你们将用很长很长的时间回答这个问题。<br>
+可以说，这个问题的答案将间接促成你们形成自己的创作理念。</p>
+<h3 id="陈词滥调">陈词滥调 </h3>
+<p>下面我将讲述为什么他的创作不真实。<br>
+因为这篇文本的<strong>表达被陈词滥调阻碍</strong>。</p>
+<p>什么是陈词滥调？为什么陈词滥调会阻碍表达？</p>
+<p>先宕开一笔，电影中的音乐往往也是很重要的表达。然而，<br>
+我们看电影时，常常觉得某些音乐、场景过于“煽情”，这是因为其选用的音乐过于俗套、贴合主题。下面我展示一段对比：</p>
+<p><a href="video%5Cmusic_in_movie.mp4">电影中的音乐对比</a></p>
+<p>大家也能看出来那种音乐的运用更令人想看下去。<br>
+更进一步来说，里面列举的一些国产电影的配乐，起到“煽情+强迫”的效果. 观众会产生感动更多是因为本能的反应。电影中的人物是悲惨的，台词是悲惨的，音乐也是悲惨的，在这种情况下观众不得不陷入到悲惨的情绪中，甚至会产生“不哭不是中国人”的负罪感。而这种煽情效果，正是由影像、故事、音乐里的陈词滥调构成的，令人难以接受。</p>
+<p>当然，导演这样做肯定有他们的理由。我们可以认为他们从一开始就不打算表达真实的情感。</p>
+<p>回到文本中，假设我们都是对创作负责的人，假设我们都想表达真实的感情，那么这种陈词滥调的阻碍就很明显了。</p>
+<p>结合冰场姑娘的那篇文本，假设作者确实体验到了某种特别的情感，那么：</p>
+<ul>
+<li>作者尝试表达观点时，搜集了各种听过的语句</li>
+<li>但由于他浸淫于陈词滥调中太久，当他想表达时，只能使用这些词汇</li>
+<li>环境中的陈词滥调严重入侵了他的表达，而他本人一无所知，甚至主动欢迎</li>
+<li>进一步地，这些东西更影响了他传达出的情感，甚至会影响他未表达的情感</li>
+</ul>
+<p>甄别陈词滥调最有效的方法，我认为仍然是忠于真实感受。</p>
+<p>以写作为例，当我们发现，在这里<strong>只能</strong>用某个词、某种句式时，那它就无关乎常见与否了。<br>
+只能：依靠对语言的高度敏锐，对创作本身的严肃态度，和我们每个人所理解的真实。</p>
+<p>如果我们能表达出我们所感受到的真实，就无需担心读者是否会信服了。到这种程度如果仍然会有人不相信的话，只有可能是你们认知中的真实不一样，由于经历和个性等。</p>
+<h2 id="真实指引一切创作">真实指引一切创作 </h2>
+<p>我一直在谈论真实，至于真实是什么，只有你们自己能回答。<br>
+<code>互动</code></p>
+<p>而读者的信服程度，与我们探索真实的程度是一种很微妙的关系。</p>
+<p>可能当我们掌握了一些技巧，捕捉到了大众心理的某些共同情感之后，我们的作品会受到很多人共鸣。在这方面做得最有代表性的是《泰坦尼克号》。<br>
+而当我们继续探索下去时，将会发现越真实的表达就越微妙，越难以被大多数人理解，因而我们可能会遭到先前喜爱我们的人的抛弃。这一过程中我们必然会反思自己的创作是不是路走窄了，是不是过于“私人化”了，并反复质疑自己创作的必要性。这一阶段也是我们坚定自己创作理念的过程。<br>
+最终，我们可能会意识到自己没有继续深入的才能和勇气，于是要么回到浅层次的真实继续博得众人喜爱，要么就此放弃创作。</p>
+<p>但假如，你们的创作过程中始终有一位两位能理解到作品深层次真实的人，得益于他们，你们将不断探索下去，那么除非是被生活所迫放弃了写作，否则你们必然会表达出自己真正想表达的，并把得到的真实展现给每一位停留于作品前的人。</p>
+<p>这是我创作最终的目的，也是对你们的期盼。</p>
+
+      </div>
+    </div>
+</body></html>

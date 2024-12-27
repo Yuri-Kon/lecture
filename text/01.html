@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>女孩与死神</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-light.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <style>
+    body {
+      font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+      line-height: 1.8;
+      margin: 20px;
+      background-color: #f9f9f9;
+      text-indent: 0;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    h1 {
+      color: #444;
+      margin-bottom: 20px;
+    }
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+      text-indent: 0;
+      line-height: 1.8;
+    }
+    pre {
+      font-family: "Courier New", "PingFang SC", monospace;
+      background: #f4f4f4;
+      border: 1px solid #ddd;
+      padding: 15px;
+      line-height: 1.8;
+      word-wrap: break-word;
+      white-space: pre-line;
+      text-indent: 0%;
+      border-radius: 5px;
+    }
+    #toggle-btn {
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>女孩与死神</h1>
+    <button id="toggle-btn">展开内容</button>
+    <pre id="txt-content" style="display: none;">
+      <p>黄昏，女孩坐在锈迹斑驳的秋千上，开心地荡着。身后，是残破的孤儿院</p>
+      <p>身着黑色斗篷，带着兜帽，死神站在身后，举起了镰刀</p>
+      <p>将要挥下时，镰刀的刀刃却垂了下来。死神将刀刃扶正，再次举起时，女孩回过头，满脸天真地向死神笑着</p>
+      <p>死神高举的双手悬在半空，伫立在原地。夕阳照在女孩脸上时，死神闭上了眼睛，狠心挥下</p>
+      <p>刀刃在女孩面前再次垂下，女孩用小小的双手握住刀刃，想要将它扶正。但，镰刀在与女孩接触的时候，散发出金光，化成白烟，消失了</p>
+      <p>死神气愤地看着女孩，转身离去时，却被女孩拉住了衣角。女孩带着歉意地指着孤儿院的一座教堂，想要死神和她一起去</p>
+      <p>女孩带着死神走进的教堂。满地碎石，白色的大理石柱子已经残缺不全。在死神面前的是一个石砌的雕像，所刻画的正是他，高举着镰刀</p>
+      <p>女孩指了指镰刀。死神将手放在镰刀上，金光闪现，雕像松开了手，死神将镰刀取下，再次面向女孩</p>
+      <p>踌躇着，思索着，终尔死神收起了镰刀，转身离去。女孩却再次拉住了他</p>
+      <p>“请问，可以带我一起走吗？”女孩说。死神不知所措地看着她，问到：“为什么？”“我不想再待在这了，这里的大人都……”女孩停止了说话，向自己的手臂看去</p>
+      <p>死神看着她的手臂，一道道伤痕，像是被豺狼撕咬的。死神将手臂放在女孩头上，抚摸着，说：“可以。但要再等三年。”女孩满面喜色地抬起头，说：“那，拉钩！”说着伸出了小拇指</p>
+      <p>死神伸出了小拇指，与她的勾在一起，女孩天真地笑了起来。黑烟弥漫，死神离去</p>
+      <p>三年后，女孩倒在了秋千旁。她骨瘦嶙峋，满头白发，用仅存的力气，抬起头，看向前方。朦胧中，她看见身着黑色斗篷的人快步走来。伸出了拇指，含笑地低下了头</p>
+      <p>死神将她抱在怀中，一遍遍地抚摸着她的白发。女孩缓缓睁开了眼睛，看着死神，如三年前一样，天真地笑着。死神欣慰地看着女孩，金光闪现，和女孩一同消失，前往彼岸</p>
+      <p>女孩的尸体仍在秋千旁，伸着拇指，甜蜜地笑着</p>
+    </pre>
+  </div>
+  <script>
+    const toggleBtn = document.getElementById('toggle-btn');
+    const txtContent = document.getElementById('txt-content');
+
+    toggleBtn.addEventListener('click', () => {
+      if (txtContent.style.display === 'none') {
+        txtContent.style.display = 'block';
+        toggleBtn.textContent = '折叠内容';
+      } else {
+        txtContent.style.display = 'none';
+        toggleBtn.textContent = '展开内容';
+      }
+    });
+  </script>
+</body>
+</html>
+

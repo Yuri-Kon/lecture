@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>理发</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-light.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <style>
+    body {
+      font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+      line-height: 1.8;
+      margin: 20px;
+      background-color: #f9f9f9;
+      text-indent: 0;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    h1 {
+      color: #444;
+      margin-bottom: 20px;
+    }
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+      text-indent: 0;
+      line-height: 1.8;
+    }
+    pre {
+      font-family: "Courier New", "PingFang SC", monospace;
+      background: #f4f4f4;
+      border: 1px solid #ddd;
+      padding: 15px;
+      line-height: 1.8;
+      word-wrap: break-word;
+      white-space: pre-line;
+      text-indent: 0%;
+      border-radius: 5px;
+    }
+    #toggle-btn {
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>理发</h1>
+    <button id="toggle-btn">展开内容</button>
+    <pre id="txt-content" style="display: none;">
+        <p>理发</p> 
+        <p>2022-04-23</p>
+        <p></p>
+        <p>理发师，她姐姐的一位挚友，在为她剪去长发时，从镜中看见几颗泪珠悄然滑下。</p>
+        <p>傍晚，狭窄的两间屋子里只有她们两人，和在白瓷砖地板上渐渐堆起的缕缕长发。金色的光穿门而入，光中飘浮寂静的细尘，随剪刀声颤动。发丝在她面前飞落，她看着镜中的自己，被紫色围布束在低矮的座椅上，看着那毫无生气的、失去了笑容的面庞，又想哭了。</p>
+        <p>理发师用剪刀慢慢抚过这名少女曾引以为傲的长发，紧闭双唇。仿佛仍在从前，坐在这儿的是这位少女的姐姐，在其身后的仍然是这位理发师。她那时候也拿着这把总是银亮的剪刀，小心地修理着那漂亮的长发的。不过那时店里的空气可热闹多了，满是两人打趣的闲话，有时还掺入些来自妹妹的……天真的话？</p>
+        <p>每次姐姐来这里时，妹妹总会跟过来的。她那时系着高耸而垂至肩膀的马尾，却总嚷着等毕业了就把头发散开，像姐姐那样披到肩上。姐姐的头发乌黑而浓密，时常波浪般涌过双肩，又在近腰处收束，于一枚不起眼的发夹中。像微风一样，从四面八方拂来，最终只汇集于她的面颊上。妹妹深爱这样的发型，也强烈地憧憬着拥有这发型的姐姐。</p>
+        <p>可那样爱着长发、将头发视若生命的妹妹却只身来此要求换成短发。理发师初感惊愕，可妹妹的目光里分明有种令人感到痛心的坚毅。于是她做了，应友人妹妹的要求，竭尽全力地为她理出想要的发型。</p>
+        <p>镜中的自己，没了黑发的陪衬，益发单薄、瘦小了。她看着自己的身形渐渐远离了姐姐的模样，忍不住哭了。姐姐，一直远远走姿啊她前面的人，始终被她注视着，被她模仿着。自她升入小学以来，她便强烈地渴望着成为姐姐那样美丽的人。为此，她会认真听姐姐说话，用心去记那极为悦耳的，犹如仙乐的语调；她会跟在姐姐身后，无论是晨跑还是访友，她的双眼就像两只镜头完完全全地录下了姐姐美丽的样子。</p>
+        <p>如此美丽、如此难以企及的姐姐，竟于医院里强烈的消毒水味和母亲嘶哑的哭声中离开了她。自那以后她不愿再照镜子。任长发生长。可她仍然会下意识地编起姐姐曾留过的发型，对着玻璃望着那朦胧的虚影，幻想自己就站在姐姐对面，或者自己已成为了姐姐。</p>
+    </pre>
+  </div>
+  <script>
+    const toggleBtn = document.getElementById('toggle-btn');
+    const txtContent = document.getElementById('txt-content');
+
+    toggleBtn.addEventListener('click', () => {
+      if (txtContent.style.display === 'none') {
+        txtContent.style.display = 'block';
+        toggleBtn.textContent = '折叠内容';
+      } else {
+        txtContent.style.display = 'none';
+        toggleBtn.textContent = '展开内容';
+      }
+    });
+  </script>
+</body>
+</html>
+
